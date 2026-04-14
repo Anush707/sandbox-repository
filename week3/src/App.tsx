@@ -1,14 +1,16 @@
-import { AppleBasket } from "./components/AppleBasket"
-import { AppleButton } from "./components/AppleButton"
+import { AppleBasket } from "./components/AppleBasket";
+import { AppleButton } from "./components/AppleButton";
+import { MovieList } from "./components/MovieList";
 
 function App() {
 
   return (
     <>
-    <AppleButton/>
-    <AppleBasket/>
+      <AppleButton/>
+      <AppleBasket/>
+      <MovieList />
     </>
   )
 }
 
-export default App
+export default App 

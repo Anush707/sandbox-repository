@@ -12,10 +12,9 @@ interface StoreState {
 
 export const useStore = create<StoreState>((set) => ({
   apples: [], 
-  // Adding to an array: Copy old items and add new one
   addApple: (color) => set((state) => {
     const newApple = { id: Date.now(), color };
-    console.log("Adding apple:", newApple); // Debug info
+    console.log("Adding apple:", newApple); 
     return { apples: [...state.apples, newApple] };
   }),
 }));
